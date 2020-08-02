@@ -489,6 +489,19 @@ function FormValidate(){
 		    					<p>
 									Basically it is a NAS ( Network Attached Storage ) to share files between Users. Is an open-source platform built atop of Linux. 
 								</p>
+								<h6>About FreeNAS :</h6>
+								<h6> If FreeNAS has one goal, it’s simplifying complex administrative tasks for users at every experience level. Every aspect of a FreeNAS system can be managed from the Web User Interface. Administrative tasks ranging from storage configuration to share and user management to software updating can all be performed with confidence without missing a critical step or experiencing a silent failure.
+									The ZFS file system at the heart of FreeNAS is designed for data integrity from top to bottom. RAID-Z, the software RAID that is part of ZFS, offers single parity redundancy equivalent to RAID 5, but without the traditional “write hole” vulnerability thanks to the copy-on-write architecture of ZFS. The additional levels RAID-Z2 and RAID-Z3 offer double and triple parity protection respectively. A software mirror RAID 10 equivalent option is also available for maximum performance. FreeNAS suggests a parity arrangement based on the number of available disks, and allows you to override that suggestion with a custom one. Intelligent read and write caches plus hot spares can be configured to maximize the performance and reliability of your storage solution.
+									The ZFS file system at the heart of FreeNAS is designed for data integrity from top to bottom. RAID-Z, the software RAID that is part of ZFS, offers single parity redundancy equivalent to RAID 5, but without the traditional “write hole” vulnerability thanks to the copy-on-write architecture of ZFS. The additional levels RAID-Z2 and RAID-Z3 offer double and triple parity protection respectively. A software mirror RAID 10 equivalent option is also available for maximum performance. FreeNAS suggests a parity arrangement based on the number of available disks, and allows you to override that suggestion with a custom one. Intelligent read and write caches plus hot spares can be configured to maximize the performance and reliability of your storage solution.
+
+									Every ZFS file system is also continuously verified with checksums to ensure the integrity of your data. If inconsistencies are found, parity blocks are used to repair corrupt data. A monthly “scrub” is enabled by default to verify the checksum of every block on the system.
+									Snapshots
+									Thanks to the copy-on-write design of ZFS, efficient, point-in-time snapshots of an entire pool or individual file system can be created at any time or on a regular schedule. Creating snapshots initially do not consume any data and are instantly created, allowing very granular policies to be created. Snapshots are also seamlessly exposed to protocols such as SMB, allowing Windows clients to browse “Previous Versions” of a file natively.
+
+									As long as a snapshot is retained, administrators can access files as they were when the snapshot was made, or revert the entire dataset to that point in time. “Golden master” snapshots can also be cloned to create writable derivatives such as deploying virtual machines that are all based on a master image.
+									Replication
+									ZFS Snapshots are more than just local restore points – they provide the foundation for remote backups as well. Replicating snapshots of a file system to a remote ZFS file system creates a perfect duplicate on the destination. Replication is a highly-efficient form of backup because only the changes that were made between snapshots are sent. In case of catastrophic damage to a local ZFS file system, any replicated snapshot can be sent to a new ZFS file system, recovering all data up to that backup.
+								</h6>
 	    					</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -497,7 +510,27 @@ function FormValidate(){
 					    	</div>
 					    	<div class="text pl-3">
 		    					<h2>Pihole - Network wide Ad Blocking</h2>
-		    					<p>Instead of browser plugins or other software on each computer,Pi-hole is a one shot solution which protects entire network,block advertisements,improve network performance and monitor statistics of traffic.</p>
+								<p>Instead of browser plugins or other software on each computer,Pi-hole is a one shot solution which protects entire network,block advertisements,improve network performance and monitor statistics of traffic.</p>
+								<h6>About Pihole  :<h6>
+									<h6>
+										Easy-to-install: our versatile installer walks you through the process, and takes less than ten minutes
+										Resolute: content is blocked in non-browser locations, such as ad-laden mobile apps and smart TVs
+										Responsive: seamlessly speeds up the feel of everyday browsing by caching DNS queries
+										Lightweight: runs smoothly with minimal hardware and software requirements
+										Robust: a command-line interface that is quality assured for interoperability
+										Insightful: a beautiful responsive Web Interface dashboard to view and control your Pi-hole
+										Versatile: can optionally function as a DHCP server, ensuring all your devices are protected automatically
+										Scalable: capable of handling hundreds of millions of queries when installed on server-grade hardware
+										Modern: blocks ads over both IPv4 and IPv6
+										Free: open-source software which helps ensure you are the sole person in control of your privacy
+										The Pi-hole makes use of a modified dnsmasq called FTLDNS, cURL, lighttpd, PHP and the AdminLTE Dashboard[18] to block DNS requests for known tracking and advertising domains. The application serves as a DNS server for a private network (replacing any pre-existing DNS server provided by another device or the ISP), with the ability to block advertisements and tracking domains for users' devices. It obtains lists of advertisement and tracking domains from predefined sources that the Pi-hole uses to compare DNS queries to. These predefined sources can be modified by the user. If a match is found within any of the lists, or the user blacklist, the Pi-hole will refuse to resolve the requested domain and respond to the requesting device with a blank webpage.
+
+										Because Pi-hole blocks domains at the network level, it is able to block advertisements, such as banner advertisements on a webpage, but it can also block advertisements in unconventional locations, such as on Android, iOS and smart TVs.
+
+										Using VPN services, Pi-Hole can block domains without using a DNS filter setup in a router. Any device that supports VPN can use Pi-Hole on a cellular network or a home network without a DNS server configured. 
+
+										The nature of Pi-hole allows it to also block website domains in general by manually blacklisting the domain name. Likewise, domains can be whitelisted manually should a website's function be impaired by domains being blocked. Pi-hole can also function as a network monitoring tool, which can aid in troubleshooting DNS requests and faulty networking troubleshooting.
+									</h6>
 		    				</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -506,7 +539,14 @@ function FormValidate(){
 					    	</div>
 					    	<div class="text pl-3">
 		    					<h2>Windows Hypervisor - Create virtual machines on x86-64 systems running Windows</h2>
-		    					<p>Is a native hypervisor; it can create virtual machines on x86-64 systems running Windows. A server computer running Hyper-V can be configured to create individual virtual machines</p>
+								<p>Is a native hypervisor; it can create virtual machines on x86-64 systems running Windows. A server computer running Hyper-V can be configured to create individual virtual machines</p>
+								<h6>About Hypervisor  :</h6>
+								<h6>
+									Microsoft Hyper-V, codenamed Viridian,[1] formerly known as Windows Server Virtualization, is a native hypervisor; it can create virtual machines on x86-64 systems running Windows.[2] Starting with Windows 8, Hyper-V superseded Windows Virtual PC as the hardware virtualization component of the client editions of Windows NT. A server computer running Hyper-V can be configured to expose individual virtual machines to one or more networks. Hyper-V was first released with Windows Server 2008, and has been available without additional charge since Windows Server 2012 and Windows 8. A standalone Windows Hyper-V Server is free, but with command line interface only
+
+								</h6>
+
+								
 		    				</div>
 	    				</div>
 	    				<div class="resume-wrap d-flex ftco-animate">
@@ -517,6 +557,11 @@ function FormValidate(){
 		    					<h2>ClearOS - Network gateway and network server</h2>
 		    					<p> Is an OS based on CentOS and Red Hat Enterprise Linux designed for use in small and medium enterprises as a network gateway and network server with a web-based administration interface. Can be used to balance networks for load balancing.
 								</p>
+								<h6>About ClearOS :</h6>
+								<h6>
+									ClearOS (also known as the ClearOS System, formerly ClarkConnect) is an operating system marketed by the software company ClearCenter. It is based on CentOS and Red Hat Enterprise Linux, designed for use in small and medium enterprises as a network gateway and network server with a web-based administration interface. It is positioned as an alternative to Windows Small Business Server. ClearOS succeeds ClarkConnect. The software is built by ClearFoundation, and support services can be purchased from ClearCenter. ClearOS 5.1 removes previous limitations to mail, DMZ, and MultiWAN functions.
+									As of the ClearOS 6.1 release, the distribution is a full-featured operating system for gateway, network and servers built from source packages for Red Hat Enterprise Linux.
+								</h6>
 		    				</div>
 	    				</div>
 					  </div>
